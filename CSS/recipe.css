@@ -1,0 +1,60 @@
+h1{
+    color: #A4A400 ;
+    background-color: #F0F0F0;
+    text-decoration-line: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    letter-spacing: 0.2em;
+
+}
+.MainHeader{
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    
+}
+
+body{
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../Lab-1/Images/silverware.jpg);
+    margin: auto;
+    width: 1024px;
+}
+
+
+.hover{
+    text-decoration: underline;
+}
+
+.cake{
+    text-decoration: line-through;
+}
+
+.userComments{
+    
+    background-color: #ffffaf;
+    margin-left: 44px;
+}
+
+.CopyRight{
+    clear: both;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul > li{
+    list-style-image: url(../Lab-1/Images/pie_icon.gif);
+}
+
+.AfterPic p {
+    margin: 1.5px;
+}
+img{
+    margin-bottom: 24px;
+}
+.tag{
+    float: right;
+}

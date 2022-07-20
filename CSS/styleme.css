@@ -1,0 +1,64 @@
+body{
+    background-color: cornsilk;
+    
+}
+
+/* Header Part */
+.heading{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 60px;
+    color: blue;
+   
+    font-family: cursive;
+    
+}
+.name{
+    margin: 25px;
+    font-size: 65px;
+    color: green;
+    font-style: normal;
+}
+.description{
+    margin: 25px;
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+/* Main list parts */
+h1{
+    color: red;  
+    font-size: 42px;
+   margin: 25px;
+}
+ul{
+    font-size: 30px;
+    margin: 35px;
+}
+ol{
+    font-size: 30px;
+    margin: 35px;
+}
+li{
+    margin: 16px;
+}
+
+/* My Moods Parts */
+.Mood{
+    display: flex;
+    gap: 575px;
+    margin-left: 300px;
+}
+.textMood{
+    display: flex;
+    gap: 804px;
+    margin-left: 400px;
+    font-size: 3pc;
+}
+
+/* Image part */
+img.my{
+    height: 550px;
+}
+
