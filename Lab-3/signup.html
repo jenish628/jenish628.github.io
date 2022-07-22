@@ -28,11 +28,11 @@
                 <div class="maintext">
                     <div class="nametext">
                         <label for="name"> Name: </label> <br /><br />
-                        <label for="gender"> Gender: </label> <br /> <br />
+                        <label> Gender: </label> <br /> <br />
                         <label for="age"> Age:</label> <br /> <br />
                         <label for="personality">Personalitytype: </label> <br /> <br />
                         <label for="os"> Favourite OS: </label> <br> <br />
-                        <label for="seekingage"> Seeking Age: </label>
+                        <label> Seeking Age: </label>
                     </div>
 
                     <div class="usertext">
@@ -41,9 +41,9 @@
                         <input type="text" id="name" name="name" size="16" required> <br />
                         <br>
                         <input type="radio" id="male" name="gender" required>
-                        <label for="male"> Male </label>
+                        <label> Male </label>
                         <input type="radio" id="female" name="gender" checked>
-                        <label for="female"> Female</label>
+                        <label> Female</label>
 
 
                         <br />
@@ -61,6 +61,7 @@
                         <br />
 
                         <select name="os" id="os" required>
+                            <option value=""> None </option>
                             <option value="windows" selected> Windows </option>
                             <option value="mac"> Mac OS X </option>
                             <option value="linux"> Linux </option>
@@ -70,7 +71,7 @@
 
                         <br />
                         <input type="text" id="min" name="min" size="6" maxlength="2" placeholder="min" required>
-                        <label for="limits"> to </label>
+                        <label> to </label>
                         <input type="text" id="max" name="max" size="6" maxlength="2" placeholder="max" required>
 
                     </div>
