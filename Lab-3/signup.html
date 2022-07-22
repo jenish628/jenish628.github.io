@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../Lab-3/signup.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+    <div class="firstpart"> 
+        <h1>
+            nerd<span class="luv">Luv <sup>tm</sup></span>  
+        </h1>
+        <p> where meek geeks meets </p>
+    </div>
+
+    <div class="main">
+        <form action="https://mumstudents.org/params.php" method="get">
+            <fieldset class="fieldclass">
+
+                <legend class="newsignup"> New User Signup: </legend>
+
+                <div class="maintext">
+                    <div class="nametext">
+                        <label for="name"> Name: </label> <br /><br />
+                        <label for="gender"> Gender: </label> <br /> <br />
+                        <label for="age"> Age:</label> <br /> <br />
+                        <label for="personality">Personalitytype: </label> <br /> <br />
+                        <label for="os"> Favourite OS: </label> <br> <br />
+                        <label for="seekingage"> Seeking Age: </label>
+                    </div>
+
+                    <div class="usertext">
+
+
+                        <input type="text" id="name" name="name" size="16" required> <br />
+                        <br>
+                        <input type="radio" id="male" name="gender" required>
+                        <label for="male"> Male </label>
+                        <input type="radio" id="female" name="gender" checked>
+                        <label for="female"> Female</label>
+
+
+                        <br />
+                        <br/>
+
+                        <input type="text" id="age" name="age" size="6" maxlength="2" required>
+
+                        <br />
+                        <br>
+
+                        <input type="text" id="personality" name="personality" size="6" maxlength="4" required>
+                        <a href=""> (Don't know your type?)</a>
+
+                        <br />
+                        <br />
+
+                        <select name="os" id="os" required>
+                            <option value="windows" selected> Windows </option>
+                            <option value="mac"> Mac OS X </option>
+                            <option value="linux"> Linux </option>
+                        </select>
+
+                        <br />
+
+                        <br />
+                        <input type="text" id="min" name="min" size="6" maxlength="2" placeholder="min" required>
+                        <label for="limits"> to </label>
+                        <input type="text" id="max" name="max" size="6" maxlength="2" placeholder="max" required>
+
+                    </div>
+                </div>
+                <br />
+                <input type="submit" value="Sign Up">
+
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div class="lastpart">
+        <div class="bodytext">
+            This page is for single nerds to meet and date each other! Type in your personal information and wait for the nerdly luv to begin! Thank you for using our site.
+            <br> <br>
+            Results and page © Copyright NerdLuv Inc.
+            <br>
+            <div class="belowimage">
+                <img src="../Lab-3/Images/back.gif" alt="Back Image"> 
+                Back to Front Page
+            </div>
+    
+        </div>
+    
+
+    </div>
+    <div class=" tag">
+        <a href="https://validator.w3.org/nu/?doc=https://jenish628.github.io/Lab-3/signup.html" target="_blank"><img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt=""></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jenish628.github.io/Lab-3/signup.css" target="_blank"><img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt=""></a>
+     </div>
+    
+</body>
+</html>

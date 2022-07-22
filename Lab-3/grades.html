@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../Lab-3/signup.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <form action="https://mumstudents.org/params.php" method="get">
+            <fieldset class="fieldclass">
+
+                <legend class="newsignup"> USER GRADES: </legend>
+
+                <div class="maintext">
+                    <div class="nametext">
+                        <label for="name"> Student Name: </label> <br /><br />
+                        <label for="id"> Student Id: </label> <br /><br />
+                        <label for="assignment"> Assignment: </label> <br /> <br />
+                        <label for="entry"> Entry:</label> <br /> <br />
+
+                    </div>
+
+                    <div class="usertext">
+                        <input type="text" id="name" name="name" size="16" required> <br />
+                        <br>
+
+                        <input type="text" id="id" name="id" size="16" required> <br />
+                        <br />
+
+                        <select name="assignment" id="assignment" required>
+                            <option value="None" selected> None </option>
+                            <option value="lab-1"> Lab-1 </option>
+                            <option value="lab-2"> Lab-2 </option>
+                            <option value="lab-3"> Lab-3 </option>
+                        </select>
+
+                        <br />
+                        <br />
+                        
+                        <input type="radio" name="first" value="2018"> 2018
+                        <input type="radio" name="first" value="2019"> 2019
+                        <input type="radio" name="first" value="2020"> 2020
+                        <input type="radio" name="first" value="2021" checked> 2021
+
+                        <br/>
+                        <br/>
+                        
+                        <input type="checkbox" name="agreement" id="agreement">
+                        I agree that the information provided is correct and is of myself. If anything goes wrong I'll be the responsible ones. 
+                    </div>
+                </div>
+                <br />
+                <input type="submit" value=" GET GRADES">
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div class=" tag">
+        <a href="https://validator.w3.org/nu/?doc=https://jenish628.github.io/Lab-3/grades.html" target="_blank"><img
+                src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt=""></a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jenish628.github.io/Lab-3/grades.css"
+            target="_blank"><img src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt=""></a>
+    </div>
+
+</body>
+
+</html>
