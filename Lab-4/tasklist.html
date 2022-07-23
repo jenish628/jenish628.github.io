@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Lab-4/tasklist.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task List </title>
+
+</head>
+
+<body>
+    
+    <div class="main">
+        <h1> Task List </h1>
+        <div class="mainbody">
+            <div class="leftside">
+                
+                Task <br>
+                <input type="text" id="tasks" name="tasks">
+    
+                <br/>
+                <button  id="add" onclick="add()"> Add Task </button>
+                
+                <br/>
+                <button  id="clear" onclick="clearItems()"> Clear Tasks </button>
+            </div>
+    
+            <div class="rightside">
+                <p> Task List </p>
+                <textarea name="description" id="description" rows="5" cols="30"> 
+    
+                </textarea>
+            </div>
+    
+        </div>
+    </div>
+
+<script src="./file.js">
+        
+</script>
+</body>
+</html>

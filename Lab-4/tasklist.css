@@ -1,0 +1,34 @@
+.main{
+    background-color: rgb(225, 225, 238);
+    border: 3px solid blue;
+    width: 600px;
+    margin: auto;
+    margin-top: 250px;
+
+}
+.main h1{
+    color: blue;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+.mainbody{
+    display: flex; 
+}
+
+.leftside{
+   margin: 25px;
+    flex-basis: 250px;
+}
+
+#clear{
+    margin-top: 10px;
+    padding: 0px 53px;
+}
+#add{
+    margin-top: 10px;
+    padding: 0px 60px;
+}
+
+.rightside{
+    flex-basis: 350px;
+}
