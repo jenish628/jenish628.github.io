@@ -1,0 +1,47 @@
+JAVA SCRIPT EXERCISES
+
+
+1. What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+
+==>>     The First Ones, Executes after 2 ms and the Second ones, Executes after 2000 milli seconds.  
+
+2. What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3));
+
+==>> Both, statements displays the alert with the same message as both calls the same function with same data.
+
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+says “BOOYAH!”
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+
+
+==>>    function booyah1(){
+        console.log("BOOYAH!!!");
+        }
+
+        function booyah2(){
+        return function(){
+            console.log("BOOYAH!!!");
+        }
+    }
+    setTimeout(booyah1,2000);
+    setTimeout(booyah2(),2000);
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+
+==>> It is the way to sepearte a HTML and Javascript files. 
+Typically, Here we seperate he documnet content and Script content.
+The practical applications are:-
+1. Clear distinction on JS and HTML Files.
+2. Codes are less prone to error.
+3. Easy to debug and update.     
