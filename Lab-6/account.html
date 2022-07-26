@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./account.css">
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account </title>
+</head>
+
+
+<body class="body">
+    <div id="upperContainer">
+        Account Name: 
+        <input type="text" id="acc_name" name="acc_name">
+        <br/> <br/>
+        Deposit: 
+        <input type="text" id="deposit" name="deposit">
+        <br/> <br/>
+        
+        <button type="button" id="create_acc" onclick="addAccount()">
+            Create new account
+        </button>
+        <br/> <br/>
+        <textarea id="display_details" name="display_details" cols="50"  rows="10">
+        
+        </textarea>
+
+        <br/>
+        <div class="buttons">
+            <input type="button" value="Deposit" onclick="debitCredit('credit')" />
+            <input type="button" value="Debit" onclick="debitCredit('debit')" />
+        </div>
+ 
+
+    </div>
+
+    <div id="lowerContainer">
+        <div id="dropdown">
+        </div>
+            <input type="hidden" name="txType" id="txType"/>
+            <input type="text" name="txAmount" id="txAmount"/>
+            <input type="button" name="deposit" value="deposit" onclick="makeTransaction()"/>
+
+      
+    </div>
+    <script src="./account.js">
+
+    </script>
+
+</body>
+</html>
