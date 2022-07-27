@@ -1,0 +1,30 @@
+body{
+    background-color: #CCCCFF;
+    font-weight: bold;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toptext{
+    text-align: center;
+    font-size: 32pt;
+
+}
+
+#textWriter{
+    height: 400px;
+    width: 90%;
+    font-size: 12pt;
+    margin-left: 100px;
+
+}
+
+.controlls{
+    display: flex;
+    justify-content: center;
+}
+
+.controlls .fieldset{
+    border: 5px solid black;
+}
