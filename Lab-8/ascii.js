@@ -27,6 +27,11 @@ $(document).ready(function () {
         }
     });
 
+
+$('#stop').click(function() {
+    stopAnimation()
+  })
+
     $('#speed').change(function () {
         startAnimation();
     })
@@ -44,7 +49,7 @@ function startAnimation() {
 
 function changesizeSelect() {
     const sizeSelect = $("#sizeSelect").val();
-    $("#textWriter").css("fontsizeSelect", sizeSelect);
+    $("#textWriter").css("fontSize", sizeSelect);
 }
 
 
@@ -68,3 +73,12 @@ function animateDiagram() {
         counter++;
     }
 }
+
+function stopAnimation() {
+    window.clearInterval(timerInterval);
+  
+    $('#textWriter').val(frames)
+    $("#stop").prop("disabled", true);
+    $("#start").prop("disabled", false);
+  
+  }
