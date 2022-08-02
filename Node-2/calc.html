@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
 </head>
 <body>
-    <div style="margin: auto; width: 20px;" >
-        <select style="margin-bottom: 15px;">
-            <option> SUM </option>
-            <option> SUBTRACT </option>
-            <option> MULTIPLY </option>
-            <option> DIVIDE </option>
-        </select>
-        <br/>
-        <input type="text" id="first" value="First Number" style="margin-bottom: 15px;"> <br/>
-        <input type="text" id="second" value="Second Number" style="margin-bottom: 15px;"> <br/>
+    <h1> SIMPLE CALCULATOR </h1>
+    <div class="main" >
+        <div class="expressions">
+            <select class="select">
+                <option> SUM </option>
+                <option> SUBTRACT </option>
+                <option> MULTIPLY </option>
+                <option> DIVIDE </option>
+            </select>
+        </div>
 
-        <input type="submit" value=" SUBMIT ">
+        <div class="numbers">
 
+            <strong> Enter the First Number:</strong>  <br/>
+            <input type="text" id="first"> <br/> <br/>
+            <strong> Enter the Second Number:</strong>  <br/> 
+            <input type="text" id="second">
+            
+        </div>
+        <input type="submit" class="submit" value="SUBMIT" >
     </div>
 </body>
 </html>

@@ -1,0 +1,43 @@
+body{
+    width: 35%;
+    margin: auto;
+    margin-top: 15%;
+    background-color: aliceblue;
+}
+
+.main{
+    padding: 25px;
+    margin: auto;
+    background-color: azure;
+    border: 2px solid gray;
+    box-shadow: 7px -7px 12px #bcc9d0;
+}
+
+.expressions{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.expressions .select{
+    text-align: center;
+    width: 180px;
+}
+
+.numbers{
+    text-align: center;
+    
+}
+
+.submit{
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    border-color: green;
+    border-radius: 45px;
+}
+
+h1{
+    text-align: center;
+    box-shadow: 1px 1px 5px 2px blue;
+    text-shadow: 1px 0px 3px red;
+}
