@@ -1,16 +1,19 @@
 body{
-    width: 35%;
     margin: auto;
-    margin-top: 15%;
-    background-color: aliceblue;
+    margin-top: 200px;
 }
 
 .main{
-    padding: 25px;
+    width: 35%;
     margin: auto;
-    background-color: azure;
-    border: 2px solid gray;
-    box-shadow: 7px -7px 12px #bcc9d0;
+    margin-top: 50px;
+    background-color: #c6dcf0;
+}
+
+.mainfield{
+    padding: 25px;
+    background-color: #ccefef;
+    box-shadow: 7px -7px 12px 7px #bcc9d0;
 }
 
 .expressions{
@@ -21,6 +24,9 @@ body{
 .expressions .select{
     text-align: center;
     width: 180px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: bolder;
 }
 
 .numbers{
@@ -34,10 +40,14 @@ body{
     height: 30px;
     border-color: green;
     border-radius: 45px;
+    font-weight: bolder;
+    box-shadow: 1px 2px green;
 }
 
 h1{
     text-align: center;
-    box-shadow: 1px 1px 5px 2px blue;
-    text-shadow: 1px 0px 3px red;
+    box-shadow: 5px 1px 5px 2px blue;
+    text-shadow: 2px -1px 3px red;
+    width: 50%;
+    margin-left: 25%;
 }

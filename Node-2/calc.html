@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Calculator</title>
-</head>
-<body>
-    <h1> SIMPLE CALCULATOR </h1>
-    <div class="main" >
-        <div class="expressions">
-            <select class="select">
-                <option> SUM </option>
-                <option> SUBTRACT </option>
-                <option> MULTIPLY </option>
-                <option> DIVIDE </option>
+  </head>
+
+  <body>
+    <h1>SIMPLE CALCULATOR</h1>
+
+    <form method="post" action="http://localhost:8000/calculator">
+      <div class="main">
+        <div class="mainfield">
+          <div class="expressions">
+            <select class="select" name="operationName">
+              <option value="add">SUM</option>
+              <option value="sub">SUBTRACT</option>
+              <option value="mul">MULTIPLY</option>
+              <option value="divide">DIVIDE</option>
             </select>
-        </div>
+          </div>
 
-        <div class="numbers">
-
-            <strong> Enter the First Number:</strong>  <br/>
-            <input type="text" id="first"> <br/> <br/>
-            <strong> Enter the Second Number:</strong>  <br/> 
-            <input type="text" id="second">
-            
+          <div class="numbers">
+            <strong> Enter the First Number:</strong> <br />
+            <input type="number" id="first" name="first" required /> <br />
+            <br />
+            <strong> Enter the Second Number:</strong> <br />
+            <input type="number" id="second" name="second" required />
+          </div>
+          <input type="submit" class="submit" value="SUBMIT" />
         </div>
-        <input type="submit" class="submit" value="SUBMIT" >
-    </div>
-</body>
+      </div>
+    </form>
+  </body>
 </html>
