@@ -1,0 +1,47 @@
+body{
+    margin-left: 150px;
+    background-color: lightgray;
+}
+
+.mainContent{
+    display: flex;
+}
+
+.courseName{
+    margin-left: 35%;
+    color: blue; 
+    font-size: 300%;
+    text-shadow: 2px 2px red;
+}
+
+.personalInfo{
+    margin-left: 50px;
+}
+img{
+    height:300px; width:280px; box-shadow: 9px -5px 12px gray
+}
+.name{
+    color: red;
+    font-family: Verdana; 
+    font-size: 300%; 
+    text-shadow: 0px 0px 20px blueviolet;
+    margin-left: -75px;
+}
+
+.personalDetails{
+    margin-top: 80px;
+    font-family: monospace;
+}
+
+.topicList{
+    font-family: cursive;
+    margin-top: 2%;
+    margin-left: 20%;
+    font-size: 25px; 
+
+}
+
+.topicName{
+    color: blueviolet;
+    text-shadow: 2px 2px red;
+}

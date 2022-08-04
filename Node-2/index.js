@@ -15,8 +15,6 @@ app.get("/",(req,resp) => {
     resp.sendFile(`${dirName}/Node-2/calc.html`)
 
 })
-
-
 const getHtmlValue = (value) => {
     return `
         <div>
@@ -24,18 +22,12 @@ const getHtmlValue = (value) => {
 
             Goto Home Page <a href ="http://localhost:8000">GoToHome Page</a>
         </div>
-    
     `
 }
-
 app.post("/calculator",(req,resp) => {
-
-
     const num1 = parseInt(req.body.first)
     const num2 = parseInt(req.body.second)
     const operation = req.body.operationName
-
-
     switch(operation) {
 
         case "add":
@@ -54,15 +46,7 @@ app.post("/calculator",(req,resp) => {
             break;
     }
 
-
-
-
-
 })
-
-
-
-
 
 app.listen(8000)
 
