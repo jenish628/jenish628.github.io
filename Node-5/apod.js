@@ -20,7 +20,7 @@ $(document).ready(function () {
     function picture (data) {
         console.log(JSON.stringify(data));
         $("#pic").attr("src", data.url);
-        $("#pic-title").text(data.title);
+        $("#title").text(data.title);
         $("#pic-desc").text(data.explanation)
     };
 
