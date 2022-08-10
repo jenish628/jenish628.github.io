@@ -36,10 +36,10 @@ $(document).ready(function () {
         let puzzleArea = document.getElementById('puzzlearea');
         let divs = puzzleArea.getElementsByTagName("div");
 
-        setPuzzleBackground(divs, false);
+        background(divs, false);
     })();
 
-    function setPuzzleBackground(divs, shuffle) {
+    function background(divs, shuffle) {
 
         // initialize each piece
         for (let i = 0; i < divs.length; i++) {
@@ -73,21 +73,21 @@ $(document).ready(function () {
 
     $("#shufflebutton").click(function () {
         started = true; 
-        findElementsClose();
+        findBoxes();
         shufflePuzzle();
     });
 
-    function findBlankPosition() {
+    function noPosition() {
         let auxArr = defaultPositions.clone();
         $('.puzzlepiece').each(function (i, v) {
-            let position = getPositionByElem($(this));
-            auxArr = removeElementFromArray(auxArr, position);
+            let position = getPosition($(this));
+            auxArr = removeElement(auxArr, position);
         });
 
         return auxArr[0];
     }
 
-    function removeElementFromArray(arr, position) {
+    function removeElement(arr, position) {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i].left == position.left && arr[i].top == position.top)
                 arr.splice(i, 1);
@@ -95,8 +95,8 @@ $(document).ready(function () {
         return arr;
     }
 
-    function findElementsClose() {
-        blankPosition = findBlankPosition();
+    function findBoxes() {
+        blankPosition = noPosition();
 
         closeElements = [];
 
@@ -113,16 +113,16 @@ $(document).ready(function () {
                 closeElements.push(v);
         });
 
-        addHtmlElementToCloseElements();
+        addElements();
     }
 
-    function addHtmlElementToCloseElements() {
+    function addElements() {
         let puzzleArea = document.getElementById('puzzlearea');
         let divs = puzzleArea.getElementsByTagName("div");
 
         $(divs).each(function (i, e) {
             let elem = $(this);
-            let position = getPositionByElem(elem);
+            let position = getPosition(elem);
 
             closeElements.forEach(function (v, i) {
                 if (v.top == position.top && v.left == position.left)
@@ -133,31 +133,31 @@ $(document).ready(function () {
 
     $(".puzzlepiece").click(function () {
         if (started) {
-            position = getPositionByElem($(this));
+            position = getPosition($(this));
             let element = searchIfElementExists(closeElements, position)
             if (element != null) 
-                setBlankPosition(element);
+                setBlank(element);
         }
     });
 
     function shufflePuzzle() {        
         for (let i = 0; i < 100; i++) {
             var closeElem = closeElements[Math.floor(Math.random() * closeElements.length)];
-            setBlankPosition(closeElem.element);
+            setBlank(closeElem.element);
         }        
     }
 
-    function setBlankPosition(element)
+    function setBlank(element)
     {
         let style = element.attr("style");
         let arrStyle = style.split(";");
         arrStyle.splice(0, 1, "left: " + blankPosition.left + "px");
         arrStyle.splice(1, 1, "top:" + blankPosition.top + "px");
         element.attr("style", arrStyle.join(";"));
-        findElementsClose();
+        findBoxes();
     }
 
-    function getPositionByElem(elem) {
+    function getPosition(elem) {
         let arr = elem.attr("style").split(';');
         let leftPosition = parseInt(arr[0].split(':')[1]);
         let topPosition = parseInt(arr[1].split(':')[1]);
@@ -179,7 +179,7 @@ $(document).ready(function () {
     $(".puzzlepiece").hover(
         function () {
             if (started) {
-                position = getPositionByElem($(this));
+                position = getPosition($(this));
                 let element = searchIfElementExists(closeElements, position);
                 if (element != null) 
                     $(element).addClass('movablepiece');
