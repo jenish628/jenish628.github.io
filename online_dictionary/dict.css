@@ -1,0 +1,27 @@
+body{
+    padding: auto;
+}
+
+.userInputArea{
+    text-align: center;
+    background-color: #e5dbdb;
+    padding: 15px;
+}
+
+h1{
+    background-color: #bbaaaa;
+    padding: 5px;
+}
+
+.input{
+    padding: 10px;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    background-color: aliceblue;
+    font-weight: bold;
+}
