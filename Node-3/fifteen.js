@@ -1,26 +1,30 @@
-$(document).ready(function(){
-
-    let defaultPos = [
-        {left: 0, top:0},
-        {left:100, top: 0},
-        {left:200, top:0},
-        {left:300, top:0},
-        {left:0, top:100},
-        {left:100, top:100},
-        {left:200, top:100},
-        {left:300, top:100},
-        {left:0, top:200},
-        {left:100, top:200},
-        {left:200, top:200},
-        {left:300, top:200},
-        {left:0, top:300},
-        {left:100, top:300},
-        {left:200, top:300},
-        {left:300, top:300},
+$(document).ready(function () {
+    let started = false;
+    let closeElements = [];
+    let blankPosition;
+ 
+    let defaultPositions = [
+        { left: 0, top: 0 },
+        { left: 100, top: 0 },
+        { left: 200, top: 0 },
+        { left: 300, top: 0 },
+        { left: 0, top: 100 },
+        { left: 100, top: 100 },
+        { left: 200, top: 100 },
+        { left: 300, top: 100 },
+        { left: 0, top: 200 },
+        { left: 100, top: 200 },
+        { left: 200, top: 200 },
+        { left: 300, top: 200 },
+        { left: 0, top: 300 },
+        { left: 100, top: 300 },
+        { left: 200, top: 300 },
+        { left: 300, top: 300 }
     ]
-    Object.prototype.clone = function (){
+
+    Object.prototype.clone = function () {
         let newObj = (this instanceof Array) ? [] : {};
-        for (i in this){
+        for (i in this) {
             if (i == 'clone') continue;
             if (this[i] && typeof this[i] == "object") {
                 newObj[i] = this[i].clone();
@@ -34,7 +38,7 @@ $(document).ready(function(){
 
         setPuzzleBackground(divs, false);
     })();
-        
+
     function setPuzzleBackground(divs, shuffle) {
 
         // initialize each piece
@@ -186,4 +190,4 @@ $(document).ready(function(){
                 $(this).removeClass('movablepiece');
             }
         });
-})
+});
